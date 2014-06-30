@@ -22,7 +22,6 @@ class Foo::Bar
 
   class << self
     def baz
-      binding.pry
       'baz'
     end
     public :baz
@@ -55,7 +54,6 @@ class InternalTest < Minitest::Test
   end
 
   def test_internal_class_singleton_method
-    binding.pry
     assert_equal ::Foo::Baz.baz, 'baz'
   end
 

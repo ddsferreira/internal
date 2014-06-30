@@ -60,7 +60,6 @@ module Internal
 
   alias_method :old_public_method_defined?, :public_method_defined?
   def public_method_defined?(*args)
-    binding.pry
     old_public_method_defined?(*args)
   end
   public :public_method_defined?
