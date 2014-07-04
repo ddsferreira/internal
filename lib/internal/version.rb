@@ -11,7 +11,7 @@ module Internal
     patch = nil # Changed private interface (protected and/or private methods). Bug fixes. Refactoring. 
                 # Patch needs to increase for each commit. Patch is a three digits figure.
                 # No side effects of any sort should be detected
-    alpha = 1 # First phase of development of new major or critical release
+    alpha = 2 # First phase of development of new major or critical release
     beta = nil # release candidate for first critical release (v0.9.0, v1.0.0.0beta1, v1.0.0)
     pre_release = nil # release candidate of new minor releases
     release_candidate = nil # Used before releasing new major or critical releases
