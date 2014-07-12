@@ -4,5 +4,9 @@ source 'https://rubygems.org'
 gemspec
 
 gem 'pry'
-gem 'pry-debugger'
+if RUBY_VERSION < '2.0.0'
+  gem 'pry-debugger'
+else
+  gem 'pry-byebug'
+end
 gem 'pry-stack_explorer'
