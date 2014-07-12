@@ -1,0 +1,9 @@
+lib/internal.rb
+lib/module.rb
+lib/internal/version.rb
+test/module_test.rb
+CHANGELOG.md
+LICENSE.txt
+README.md
+Gemfile
+design_rationale.md
