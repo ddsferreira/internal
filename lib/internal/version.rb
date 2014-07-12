@@ -19,7 +19,7 @@ module Internal
               # Library extensions using library internal interface are not broken. 
               # Changed private interface (protected and/or private methods). Bug fixes. Refactoring. 
               # No side effects of any sort should be detected
-    alpha = 1 # First phase of development of new major, minor or patch release
+    alpha = 2 # First phase of development of new major, minor or patch release
     release_candidate = nil # Used before releasing new minor or major releases
 
     "#{major}.#{minor}.#{tiny}" << if alpha
