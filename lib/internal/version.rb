@@ -14,7 +14,7 @@ module Internal
               # Production code based on this release may be broken when using previous releases.
               # Changes to internal interface with broken backwards compatibility
               # Library extensions may be broken 
-    teeny = 0 # Changed internal interface with backward compatibility
+    tiny = 0 # Changed internal interface with backward compatibility
               # There should be no impact on third party software
               # Library extensions using library internal interface are not broken. 
               # Changed private interface (protected and/or private methods). Bug fixes. Refactoring. 
@@ -22,10 +22,10 @@ module Internal
     alpha = 2 # First phase of development of new major, minor or patch release
     release_candidate = nil # Used before releasing new minor or major releases
 
-    "#{major}.#{minor}.#{teeny}" << if alpha
-      ".alpha.#{alpha}"
+    "#{major}.#{minor}.#{tiny}" << if alpha
+      ".alpha#{alpha}"
     elsif release_candidate
-      ".rc.#{release_candidate}"
+      ".rc#{release_candidate}"
     end
   end
 
