@@ -47,8 +47,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # the path on the guest to mount the folder. And the optional third
   # argument is a set of non-required options.
 
-  # Use personal configuration files to be mounted in home/vagrant
-  config.vm.synced_folder ENV['VAGRANT_HOME_CONFIG'], '/vagrant.conf'
+  # Extra vagrant synced folder
+  # Inside this folder you should have a vagrant.conf folder
+  config.vm.synced_folder ENV['VAGRANT_SYNCED_FOLDER'], '/vagrant_synced_folder'
 
   # Provider-specific configuration so you can fine-tune various
   # backing providers for Vagrant. These expose provider-specific options.

@@ -8,18 +8,18 @@ echo 'Create symbolic links for $HOME configuration files'
 
 echo 'Bash configuration files'
 if [ -e $HOME/.bashrc ]; then rm $HOME/.bashrc; fi
-if ! [ -e $HOME/.bashrc ]; then ln -s /vagrant.conf/.bashrc $HOME/.; fi
+if ! [ -e $HOME/.bashrc ]; then ln -s /vagrant_synced_folder/vagrant.conf.d/.bashrc $HOME/.; fi
 if [ -e $HOME/.bash_profile ]; then rm $HOME/.bash_profile; fi
-if ! [ -e $HOME/.bash_profile ]; then ln -s /vagrant.conf/.bash_profile $HOME/.; fi
+if ! [ -e $HOME/.bash_profile ]; then ln -s /vagrant_synced_folder/vagrant.conf.d/.bash_profile $HOME/.; fi
 if [ -e $HOME/.profile ]; then rm $HOME/.profile; fi
-if ! [ -e $HOME/.profile ]; then ln -s /vagrant.conf/.profile $HOME/.; fi
+if ! [ -e $HOME/.profile ]; then ln -s /vagrant_synced_folder/vagrant.conf.d/.profile $HOME/.; fi
 
 echo 'VIM configuration files'
-if ! [ -e $HOME/.vim ]; then ln -s /vagrant.conf/.vim $HOME/.; fi
-if ! [ -e $HOME/.vimrc ]; then ln -s /vagrant.conf/.vimrc $HOME/.; fi
+if ! [ -e $HOME/.vim ]; then ln -s /vagrant_synced_folder/vagrant.conf.d/.vim $HOME/.; fi
+if ! [ -e $HOME/.vimrc ]; then ln -s /vagrant_synced_folder/vagrant.conf.d/.vimrc $HOME/.; fi
 
 echo 'TMUX configuration files'
-if ! [ -e $HOME/.tmux.conf ]; then ln -s /vagrant.conf/.tmux.conf $HOME/.; fi
+if ! [ -e $HOME/.tmux.conf ]; then ln -s /vagrant_synced_folder/vagrant.conf.d/.tmux.conf $HOME/.; fi
 
 # Update system
 if [ "$update" == 'true' ] 
@@ -68,7 +68,7 @@ else
 fi
 
 echo 'Git configuration file'
-if ! [ -e $HOME/.gitconfig ]; then ln -s /vagrant.conf/.gitconfig $HOME/.; fi
+if ! [ -e $HOME/.gitconfig ]; then ln -s /vagrant_synced_folder/vagrant.conf.d/.gitconfig $HOME/.; fi
 
 echo 'Git set global user settings'
 git config --global user.name "Daniel da Silva Ferreira (dsferreira)"
