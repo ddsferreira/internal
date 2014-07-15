@@ -1,0 +1,15 @@
+--title 'Internal'
+--charset utf-8
+--protected
+--no-private
+--markup markdown
+--markup-provider kramdown
+--type-tag default:'Default'
+--type-name-tag set:'Set'
+lib/
+--exclude lib/assets/
+--exclude lib/tasks/
+--quiet
+-
+CHANGELOG.md
+README.md
