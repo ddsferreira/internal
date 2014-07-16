@@ -1,4 +1,4 @@
-# MILESTONES
+# Roadmap
 
 ### v0.1.0
 
@@ -7,7 +7,7 @@
 * Targetting ruby 2.1.2 version
 * When explicitly specified Module#internal should be used like remaining access modifiers.
 
-~~~ ruby
+~~~
 class foo
   def bar
   end
@@ -21,7 +21,7 @@ end
 
 * Implicit use is out of scope for this release
 
-~~~ ruby
+~~~
 class foo
   internal
 
@@ -32,6 +32,7 @@ class foo
   end
 end
 ~~~
+
 
 * It should not impact ruby performance
 * It should be usable in production environment
