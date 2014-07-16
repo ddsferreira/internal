@@ -7,9 +7,8 @@
 --type-tag default:'Default'
 --type-name-tag set:'Set'
 lib/
---exclude lib/assets/
---exclude lib/tasks/
---quiet
+#--quiet
 -
 CHANGELOG.md
 README.md
+ROADMAP.md
